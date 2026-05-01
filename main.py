@@ -18,6 +18,7 @@ def speak(text):
 def aiprocess(command):
     client = OpenAI(
     api_key = "Api key"
+    )
     completion = client.chat.completions.create(
     model = 'gpt-3.5-turbo',
 
@@ -105,3 +106,4 @@ if __name__ == "__main__":
         except Exception as e:
             print("Error:", e)
             speak("An error occurred.")
+            

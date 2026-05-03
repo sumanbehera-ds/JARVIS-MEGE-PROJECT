@@ -1,5 +1,5 @@
 # JARVIS-MEGE-PROJECT
-#  Jarvis - Python Voice Assistant
+# Jarvis - Python Voice Assistant
 
 Jarvis is a simple Python-based voice assistant that can perform tasks like opening websites, playing music, fetching news, and responding using AI. It uses speech recognition to listen to commands and text-to-speech to reply.
 

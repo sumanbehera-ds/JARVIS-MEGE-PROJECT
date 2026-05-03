@@ -19,5 +19,3 @@ You need to add your API keys in the code:
 
 Replace "Api key" with your OpenAI API key
 Replace "News api key" with your NewsAPI key
-
-⚠️ Important: Never upload your API keys to GitHub. Use environment variables or a .env file for security.

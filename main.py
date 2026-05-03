@@ -32,7 +32,7 @@ def aiprocess(command):
 
 def processcommand(c):
     c=c.lower()
-    # print(c)
+    
     if "open youtube" in c:
         speak("Opening YouTube")
         webbrowser.open("https://www.youtube.com")
@@ -64,32 +64,28 @@ def processcommand(c):
         speak("Goodbye!")
        
     else:
-        # let the open ai handle this
         output = aiprocess(c)
         speak(output)
 
 if __name__ == "__main__":
     speak("Initializing Jarvis....")
    
-    # obtain audio from microphone
     print("Recognizing...")
     while True:
         try:
             print("listening for wake word")
             with sr.Microphone() as source:
-                # print("Listening...")
-                
+               
                 audio = r.listen(source,timeout=5,phrase_time_limit=5)
             
             word = r.recognize_google(audio)
             print("hear",word)
             # print("User said:", command)
             if("jarvis" in word.lower()):
-                # time.sleep(0.3)
+               
                 engine.say("Ya")
                 print("jarvic active...")
-                # time.sleep(1.5)
-               # lisine for command
+               
                 with sr.Microphone() as source:
                     
                     audio = r.listen(source,timeout=5)
